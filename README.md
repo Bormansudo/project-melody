@@ -1,2 +1,2 @@
-# project-melody
-Учебный проект
+# project-melody - Учебный проект
+## Проект выполнил: Bormansudo
