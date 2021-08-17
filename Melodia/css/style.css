@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box; /*Высота и ширина будет складываться, а не прибавляться */
+}
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: #635854;
+  padding: 12px 0;
+  border-bottom: 4px solid #3596f5;
+}
+.navbar {
+  max-width: 1280px; /*Максимальная ширина навигационного меню */
+  margin: auto; /*Отключаем внешние отступы */
+  display: flex; /*Расположение элементов в строку*/
+  justify-content: space-between; /*Расставили элементы по краям*/
+  align-items: center; /*Выравнивание по вертикали по центру */
+}
+.navbar-items {
+  display: flex;
+  margin: 0; /*Отключаем внешние отступы */
+  padding: 0; /*Отключаем внутренние отступы */
+  list-style: none; /*Убираем черточки у перечисления*/
+  text-align: center; /*Выравнивание текста по центру*/
+}
+.navbar-item {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.navbar-link {
+  text-decoration: none;
+  color: #fff;
+}
+.navbar-contacts {
+  text-align: right;
+}
+.navbar-text {
+  display: block;
+  color: #fff;
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 19px;
+}
+.navbar-phone {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 21px;
+}
