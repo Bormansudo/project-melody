@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Bebas Neue";
+  src: local("BebasRegular"), local("BebasRegular"),
+    url("BebasRegular.woff2") format("woff2"),
+    url("BebasRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   box-sizing: border-box; /*Высота и ширина будет складываться, а не прибавляться */
 }
@@ -49,4 +58,55 @@ header {
   font-weight: 700;
   font-size: 17px;
   line-height: 21px;
+}
+.main {
+  max-width: 1280px;
+  margin: auto;
+  padding-top: 54px;
+  display: flex;
+}
+.main-floor {
+  flex-grow: 1; /* Контейнер будет занимать все свободное пространство */
+  text-align: center; /* Выравнивание текста по центу */
+  display: flex; /* Флекс контейнера */
+  flex-direction: column; /* Все элменты в колонку*/
+  align-items: center; /* Выравнивание по центру*/
+  justify-content: space-between; /* В данном случае выравнивание по вертикали. так как сверху выставлено в колонку*/
+}
+.home-image path {
+  opacity: 0; /* Видимость = 0 */
+  cursor: pointer; /* При наведении появляется палец */
+}
+.home-image path:hover {
+  opacity: 1; /* Видимость = 1 при наведении мыши*/
+}
+.counter-group {
+  display: flex; /* Флекс контейнера */
+  flex-direction: column; /* Все элменты в колонку*/
+  align-items: center; /* Выравнивание по центру*/
+}
+.counter-button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.main-title {
+  font-family: "BebasRegular", sans-serif;
+  font-size: 37px;
+  line-height: 37px;
+  color: #635854;
+}
+.counter {
+  font-family: "BebasRegular", sans-serif;
+  color: #635854;
+  font-size: 124px;
+  margin-top: 10px;
+}
+.button {
+  background-color: #3596f5;
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+  padding: 16px 36px;
+  cursor: pointer;
 }
