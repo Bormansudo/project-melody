@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Bebas Neue";
   src: local("BebasRegular"), local("BebasRegular"),
-    url("BebasRegular.woff2") format("woff2"),
-    url("BebasRegular.woff") format("woff");
+    url("../fonts/BebasRegular.woff2") format("woff2"),
+    url("../fonts/BebasRegular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -84,6 +84,9 @@ header {
   display: flex; /* Флекс контейнера */
   flex-direction: column; /* Все элменты в колонку*/
   align-items: center; /* Выравнивание по центру*/
+}
+path.current-floor {
+  opacity: 1;
 }
 .counter-button {
   background-color: #fff;
